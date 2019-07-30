@@ -1,0 +1,27 @@
+<html>
+<body>
+<div>
+<form method="post">
+<input type="text" name="name" placeholder="enter item name">
+<input type="text" name="amount" placeholder="enter amount">
+<input type="text" name="inventory_number" placeholder="enter inventory_number">
+<button type="submit">Submit</button>
+</form>
+</div>
+ <form method="post" action="getitem">
+  <input type="number" name="getitem" >
+     <button type="submit">Submit</button>
+     </form>
+<div>Список сообщений</div>
+</form>
+{{#items}}
+<div>
+     <b>{{id}}</b>
+     <span>{{name}}</span>
+     <span>{{amount}}</span>
+     <i>{{inventory_number}}</i>
+     <i>{{withdrawal_quantity}}</i>
+</div>
+     {{/items}}
+</body>
+</html>
